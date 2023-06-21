@@ -21,6 +21,7 @@ const App = () => {
 
   const deleteTaskHandler = (taskId) => {
     setTasks((prevTasks) => {
+      console.log(taskId)
       const updatedTasks = prevTasks.filter((task) => task.id !== taskId);
       return updatedTasks;
     });
